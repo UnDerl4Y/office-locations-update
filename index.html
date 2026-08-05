@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Office Locations Comparison</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,Segoe UI,sans-serif;
+}
+
+body{
+    background:#fff;
+    padding:18px;
+}
+
+.container{
+    max-width:1800px;
+    margin:auto;
+}
+
+.section-title{
+    font-size:34px;
+    font-weight:700;
+    margin:20px 0 30px;
+    color:#111;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:14px;
+}
+
+.card{
+    border:1px solid #e4e1ef;
+    border-top:2px solid #5728ff;
+    padding:40px;
+    background:#fff;
+    min-height:320px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.icon{
+    width:52px;
+    height:52px;
+    background:#efe7ff;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:28px;
+}
+
+.icon svg{
+    width:24px;
+    height:24px;
+    stroke:#5728ff;
+    stroke-width:2;
+    fill:none;
+}
+
+h2{
+    font-size:24px;
+    font-weight:700;
+    color:#000;
+    margin-bottom:18px;
+}
+
+.address{
+    color:#5c5f7a;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.contact{
+    margin-top:20px;
+    color:#5728ff;
+    font-weight:600;
+    line-height:1.8;
+}
+
+.divider{
+    height:90px;
+}
+
+@media(max-width:768px){
+
+.card{
+    padding:30px;
+}
+
+.address{
+    font-size:16px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- CURRENT -->
+    <h1 class="section-title">Current Office Locations</h1>
+
+    <div class="cards">
+
+        <!-- Canada -->
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            </div>
+
+            <h2>Canada</h2>
+
+            <div class="address">
+                300, 34334 Forrest Terrace, Unit 254<br>
+                Abbotsford, BC V2S 1G7
+            </div>
+        </div>
+
+        <!-- India -->
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            </div>
+
+            <h2>India</h2>
+
+            <div class="address">
+                S3 and S4, Second floor, Monarch Serenity,<br>
+                Thanisandra Main Road<br>
+                Above Kotak Mahindra Bank<br>
+                Bengaluru, Karnataka 560077
+            </div>
+        </div>
+
+        <!-- Malaysia -->
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            </div>
+
+            <h2>Malaysia</h2>
+
+            <div class="address">
+                H-04-03, Komersial Southkey Mozek<br>
+                Jalan Persiaran Southkey 1, Kota Southkey<br>
+                80150 Johor Bahru, Johor
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- UPDATED -->
+    <h1 class="section-title">Updated Office Locations</h1>
+
+    <div class="cards">
+
+        <!-- Canada -->
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            </div>
+
+            <h2>Canada</h2>
+
+            <div class="address">
+                300, 34334 Forrest Terrace, Unit 254<br>
+                Abbotsford, BC V2S 1G7
+            </div>
+        </div>
+
+        <!-- India (Updated) -->
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            </div>
+
+            <h2>India</h2>
+
+            <div class="address">
+                S3 and S4, Second floor, Monarch Serenity,<br>
+                Sri Balaji Krupa Layout,Thanisandra Main Road,<br>
+                Above Kotak Mahindra Bank,<br>
+                Bengaluru, Karnataka 560077
+            </div>
+
+            <div class="contact">
+                Landline: 080 4126 5122<br>
+                Phone: +91-901 933 4200
+            </div>
+        </div>
+
+        <!-- Malaysia -->
+        <div class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+            </div>
+
+            <h2>Malaysia</h2>
+
+            <div class="address">
+                H-04-03, Komersial Southkey Mozek<br>
+                Jalan Persiaran Southkey 1, Kota Southkey<br>
+                80150 Johor Bahru, Johor
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+// No JavaScript required
+</script>
+
+</body>
+</html>
